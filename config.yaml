@@ -1,0 +1,26 @@
+# Configuration file for AI vs Real Art Detection
+
+# Model settings
+model:
+  path: "models/deepfake_detector.h5"  # Path to the pre-trained model
+  input_size: [224, 224]  # Input size for the model (height, width)
+
+# Data settings
+data:
+  input_dir: "data/"  # Directory containing input images
+  output_dir: "results/"  # Directory to store detection results
+
+# Preprocessing settings
+preprocessing:
+  normalize: true  # Normalize images to [0, 1]
+  resize: true  # Resize images to match model input size
+
+# Detection settings
+detection:
+  batch_size: 16  # Batch size for processing images
+  threshold: 0.5  # Threshold for classifying an image as AI-generated
+
+# Logging settings
+logging:
+  level: "INFO"  # Logging level (DEBUG, INFO, WARNING, ERROR)
+  output_file: "logs/detection.log"  # File to save logs
