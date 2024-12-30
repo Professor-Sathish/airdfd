@@ -1,3 +1,6 @@
-matplotlib
+python>=3.8
+tensorflow  
 numpy
-tensorflow
+pandas
+opencv-python
+matplotlib
